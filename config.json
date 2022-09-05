@@ -1,0 +1,9 @@
+{
+  "prefix": "<the prefix you want>",
+  "token": "<your token>",
+  "permissions": "<the permission needed>",
+  "application_id": "<application id>",
+  "owners": [
+    828574868396048395
+  ]
+}
