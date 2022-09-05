@@ -65,7 +65,7 @@ class MyModal(disnake.ui.Modal):
         )
 
     async def callback(self, inter: disnake.ModalInteraction) -> None:
-        embed = disnake.Embed(title="Profilo")
+        embed = disnake.Embed(title="<name of the callback embed>")
         for key, value in inter.text_values.items():
             embed.add_field(name=key.capitalize(), value=value, inline=False)
         await inter.response.send_message(embed=embed)
