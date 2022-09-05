@@ -81,6 +81,16 @@ The config is available using the following code:
 """
 bot.config = config
 
+def init_db():
+    with closing(connect_db()) as db:
+        with open("database/schema.sql", "r") as f:
+            db.cursor().executescript(f.read())
+        db.commit()
+
+
+def connect_db():
+    return prisma.connect("database/database.db")
+
 
 @bot.event
 async def on_ready() -> None:
