@@ -10,3 +10,5 @@ def create_button_view():
   '''simple button'''
   
   # For collegate the button to the class use view=view
+
+# put here the class (see class embed for help)
