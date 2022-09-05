@@ -288,7 +288,6 @@ async def on_command_error(context: Context, error) -> None:
         await context.send(embed=embed)
     raise error
 
-
-
+init_db()
 # Run the bot with the token
 bot.run(config["token"])
