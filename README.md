@@ -14,3 +14,6 @@ go to config.json and configurate it then go to database -> schema.prisma and co
 
 # Problems
 - Dm me on discord: overplex.eth#0001
+
+#helpers
+- I want to say a big thank you for all the support i got from the help channel of disnake
