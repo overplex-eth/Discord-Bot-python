@@ -72,6 +72,7 @@ The config is available using the following code:
 - self.bot.config # In cogs
 """
 bot.config = config
+bot.db = connect_db()
 
 def init_db():
     with closing(connect_db()) as db:
