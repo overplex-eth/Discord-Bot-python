@@ -1,6 +1,10 @@
 import disnake
 from disnake.ext import commands
 
+class General(commands.Cog, name="name-slash"): #name the cog
+    def __init__(self, bot):
+        self.bot = bot
+    
  @commands.slash_command(name="<slash command name>", description="<slash command description>") #change the name + description
     async def test_command(self, interaction: disnake.ApplicationCommandInteraction):
 
@@ -37,4 +41,4 @@ class MyModal(disnake.ui.Modal):
         await inter.response.send_message("Oops, something went wrong.", ephemeral=True)
 
 def setup(bot):
-    bot.add_cog(MyModal(bot))
+    bot.add_cog(General(bot))
