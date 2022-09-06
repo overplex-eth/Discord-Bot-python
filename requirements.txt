@@ -1,3 +1,4 @@
 discord
 disnake
 prisma
+aiohttp
