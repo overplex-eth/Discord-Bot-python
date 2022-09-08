@@ -65,5 +65,5 @@ class assistenza(commands.Cog):
                 return
                                     
 def setup(bot):
-    bot.add_cog(Ticket (bot))
+    bot.add_cog(Ticket(bot))
 
