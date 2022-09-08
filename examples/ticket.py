@@ -38,7 +38,7 @@ class assistenza(commands.Cog):
                 embed.add_field(name="Ticket", value"hello! and welcome to the ticket!", inline=False)
                 category = disnake.utils.get(guild.categories, name="") # put here the name of your category for the ticket
                 ticket = await guild.create_text_channel(f"ticket-{author}", topic=f"{inter.author.id}", category=category, overwrites=overwrites)
-                msg =  await inter.send(f"Ho creato il <#{ticket.id}>", ephemeral=True)
+                msg =  await inter.send(f"I created the <#{ticket.id}>", ephemeral=True)
                 await ticket.send(f"Hey {inter.author.mention}! wait for a staffer <@id>", embed=embed, # put the id of the staff role so they will get notified
                  components= [
                  disnake.ui.Button(style=ButtonStyle.blurple, label='Close the ticket', custom_id='chiudi', emoji="❌"),             # close button
