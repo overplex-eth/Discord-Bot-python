@@ -60,7 +60,11 @@ class assistenza(commands.Cog):
                 channel = inter.channel
                 if channel.name.startswith("ticket-"):
                     autorl = inter.author
-                claim = await inter.send(f"Your ticket will be handled by <@{inter.author.id}>") # the reply for the moderator
+                if guild.get_role("<staff role id>"):
+                    claim = await inter.send(f"Your ticket will be handled by <@{inter.author.id}>")
+                if guild.get_role("<everyone role id>):
+                    noclaim= await inter.send("Non puoi claimarti il tuo ticket!", ephemeral=True)  
+                  
                 
                 return
                                     
