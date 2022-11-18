@@ -70,17 +70,16 @@ The config is available using the following code:
 - self.bot.config # In cogs
 """
 bot.config = config
-bot.db = connect_db()
-
 def init_db():
     with closing(connect_db()) as db:
-        with open("database/schema.sql", "r") as f:
+        with open("database/schema.sql") as f:
             db.cursor().executescript(f.read())
         db.commit()
 
-
 def connect_db():
-    return prisma.connect("database/database.db")
+    return sqlite3.connect("database/database.db")
+
+bot.db = connect_db()
 
 
 @bot.event
