@@ -14,9 +14,7 @@ go to database -> schema.prisma and configurate your database
 # Starting the bot
 - Just run the file that creates after you have opened install.bat (the file name is: "start.bat")
 # Problems
-- Dm me on discord: overplex.eth#0001 or Borgo#4460
+- Dm me on discord: overplex.eth#6969
 - If you feel this isn't safe check it on https://virustotal.com/ and if you still think it isn't safe contact us on discord
 
-# Helpers
-- I want to say a big thank you for all the support i got from the help channel of disnake
-- Borgo 
+
